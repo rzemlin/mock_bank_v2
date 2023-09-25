@@ -58,7 +58,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: mock_bank_v2_test
+  database: mock_bank_v2
+
+  username: postgres
+
+  # The password associated with the postgres role (username).
+  password: rocco 
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
